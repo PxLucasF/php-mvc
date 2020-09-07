@@ -1,0 +1,14 @@
+{% extends 'parts/body.twig' %}
+
+{% block title %}Erro {{error}}{% endblock %}
+
+{% block body %}
+<section class="section">
+  <div class="container">
+    <div class="notification is-danger">
+      <h1>🚨 Erro {{error}}</h1>
+      <p>{{message}} 😢</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

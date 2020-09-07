@@ -1,0 +1,59 @@
+{% extends 'parts/body.twig' %}
+
+{% block title %}Contato{% endblock %}
+
+{% block body %}
+<section class="section">
+  <div class="container">
+    <h1 class="title">💬 Fale conosco</h1>
+    <div class="card">
+      <div class="card-content">
+        <div class="field">
+          <label class="label">Nome completo</label>
+          <div class="control">
+            <input class="input" type="text" placeholder="Fulano da Silva">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Endereço de e-mail</label>
+          <div class="control">
+            <input class="input" type="email" placeholder="fulanodasilva@exemplo.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Departamento</label>
+          <div class="control">
+            <div class="select is-fullwidth">
+              <select>
+                <option>Administrativo</option>
+                <option>Financeiro</option>
+                <option>Recursos humanos</option>
+                <option>TI</option>
+                <option selected>Vendas</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="field">
+          <label class="label">Mensagem</label>
+          <div class="control">
+            <textarea class="textarea" placeholder="Digite a sua mensagem aqui..."></textarea>
+          </div>
+        </div>
+
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-primary">Enviar mensagem</button>
+          </div>
+          <div class="control">
+            <button class="button is-danger is-light">Limpar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

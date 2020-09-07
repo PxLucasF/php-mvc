@@ -1,13 +1,6 @@
 <?php
 
-$this->get('/', function () {
-  echo 'Página inicial 🏡';
-});
-
-$this->get('/teste', function () {
-  echo 'Página de teste 📝';
-});
-
-$this->get('/teste/subpagina', function () {
-  echo 'Subpágina de teste 📂';
-});
+$this->get('/', 'PagesController@index');
+$this->get('/cep', 'PagesController@cep');
+$this->get('/sobre', 'PagesController@sobre');
+$this->get('/contato', 'PagesController@contato');
